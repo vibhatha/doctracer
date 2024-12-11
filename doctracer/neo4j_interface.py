@@ -4,10 +4,8 @@ from neo4j import GraphDatabase
 class Neo4jInterface:
     def __init__(self):
         uri = os.getenv('NEO4J_URI')
-        with open('/run/secrets/neo4j_user') as f:
-            user = f.read().strip()
-        with open('/run/secrets/neo4j_password') as f:
-            password = f.read().strip()
+        user = os.getenv('NEO4J_USER')
+        password = os.getenv('NEO4J_PASSWORD')
         self.driver = GraphDatabase.driver(uri, auth=(user, password))
 
     def close(self):
