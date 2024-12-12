@@ -2,3 +2,5 @@ neo4j
 pytest
 pandas
 click
+flask
+flask-cors
