@@ -11,3 +11,8 @@ export const fetchGraphData = async () => {
     const response = await axios.get(`${API_URL}/graph`);
     return response.data;
 };
+
+export const fetchParentNodes = async () => {
+    const response = await axios.get(`${API_URL}/parents`);
+    return response.data;
+};

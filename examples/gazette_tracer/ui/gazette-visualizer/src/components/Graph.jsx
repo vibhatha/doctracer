@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import * as d3 from "d3";
 
-const AmendmentGraph = ({ data = { nodes: [], links: [] } }) => {
+const AmendmentGraph = ({ data = { nodes: [], links: [] }, onNodeClick }) => {
     useEffect(() => {
+        // Add debugging at the start of useEffect
+        console.log("Graph component received data:", data);
+
         if (!data?.nodes || !data?.links) {
             console.error("Invalid data format:", data);
             return;
@@ -49,6 +52,9 @@ const AmendmentGraph = ({ data = { nodes: [], links: [] } }) => {
             };
         });
 
+        // Log processed nodes
+        console.log("Processed nodes:", processedNodes);
+
         // Rest of your existing setup code...
         const width = 1000;
         const height = 600;
@@ -81,6 +87,11 @@ const AmendmentGraph = ({ data = { nodes: [], links: [] } }) => {
             .enter()
             .append("g")
             .attr("class", "node")
+            .style("cursor", "pointer")
+            .on("click", (event, d) => {
+                console.log("Clicked node:", d);
+                onNodeClick?.(d);
+            })
             .call(d3.drag()
                 .on("start", (event, d) => {
                     if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -133,7 +144,7 @@ const AmendmentGraph = ({ data = { nodes: [], links: [] } }) => {
                 .attr("transform", d => `translate(${d.x}, ${d.y})`);
         }
 
-    }, [data]);
+    }, [data, onNodeClick]);
 
     return <svg id="graph-svg"></svg>;
 };
