@@ -76,13 +76,6 @@ const AmendmentGraph = ({ data = { nodes: [], links: [] } }) => {
             .attr("stroke", "green")
             .attr("stroke-width", 2);
 
-        link.append("text")
-            .attr("dy", -5)
-            .attr("text-anchor", "middle")
-            .text(d => d.label)
-            .style("font-size", "10px")
-            .style("fill", "white");
-
         const node = svg.selectAll(".node")
             .data(processedNodes)
             .enter()
@@ -135,10 +128,6 @@ const AmendmentGraph = ({ data = { nodes: [], links: [] } }) => {
                 .attr("y1", d => d.source.y)
                 .attr("x2", d => d.target.x)
                 .attr("y2", d => d.target.y);
-
-            link.select("text")
-                .attr("x", d => (d.source.x + d.target.x) / 2)
-                .attr("y", d => (d.source.y + d.target.y) / 2);
 
             node
                 .attr("transform", d => `translate(${d.x}, ${d.y})`);
