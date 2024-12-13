@@ -46,10 +46,14 @@ const Dashboard = () => {
                 fetchParentNodes()
             ]);
 
-            // Process timeline data with parent information
-            console.log("rawTimelineData", rawTimelineData);
+            console.log("rawTimelineData");
+            console.log(rawTimelineData);
+            console.log("graph");
+            console.log(graph);
+            console.log("parents");
+            console.log(parents);
+
             const parentIds = new Set(parents.map(p => p[0]));
-            console.log("parentIds", parentIds);
             const timeline = rawTimelineData.map(item => ({
                 id: item[0],
                 date: item[1],
@@ -57,8 +61,6 @@ const Dashboard = () => {
                 url: item[3],
                 isParent: parentIds.has(item[0])
             }));
-
-            console.log("timeline", timeline);
 
             setTimelineData(timeline);
             setParentNodes(parentIds);
@@ -69,13 +71,6 @@ const Dashboard = () => {
 
         loadData();
     }, []);
-
-    const handleNodeClick = (node) => {
-        console.log("Node clicked:", node);
-        if (node.url) {
-            window.open(node.url, '_blank');
-        }
-    };
 
     return (
         <div>
