@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { fetchTimelineData, fetchGraphData, fetchParentNodes } from '../services/api';
-import Timeline from '../components/Timeline';
-import Graph from '../components/Graph';
+import TimelineV2 from '../components/TimelineV2';
+import { extractTextFromPDF } from '../utils/pdfUtils';
+import { summarizeText } from '../utils/summarizeText';
 
 const transformData = (rawData) => {
     const nodes = new Map();
@@ -59,8 +60,12 @@ const Dashboard = () => {
                 date: item[1],
                 name: item[2],
                 url: item[3],
-                isParent: parentIds.has(item[0])
+                isParent: parentIds.has(item[0]),
+                
             }));
+
+            console.log("timeline");
+            console.log(timeline);
 
             setTimelineData(timeline);
             setParentNodes(parentIds);
@@ -76,7 +81,7 @@ const Dashboard = () => {
         <div>
             <h1>Gazette Visualizer</h1>
             <h2>Timeline</h2>
-            <Timeline data={timelineData} />
+            <TimelineV2 data={timelineData} />
         </div>
     );
 };

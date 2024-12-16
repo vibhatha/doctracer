@@ -4,3 +4,5 @@ pandas
 click
 flask
 flask-cors
+pytesseract
+pdf2image

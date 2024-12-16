@@ -12,8 +12,9 @@ const Timeline = ({ data }) => {
     useEffect(() => {
         // Calculate year range from data
         const years = data.map(d => new Date(d.date).getFullYear());
-        const minYear = Math.min(...years);
-        const maxYear = Math.max(...years);
+        const minYear = Math.min(...years) - 1;
+        const maxYear = Math.max(...years) + 1;
+        console.log("minYear", minYear);
         setYearRange([minYear, maxYear]);
         setCurrentYear(maxYear);
 

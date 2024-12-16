@@ -1,12 +1,15 @@
-from flask import Flask, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from doctracer.neo4j_interface import Neo4jInterface
+from doctracer.extract.pdf_extractor import extract_text_from_pdf
 
 app = Flask(__name__)
 neo4j = Neo4jInterface()
 
 # Allow all origins or specify a list of allowed origins
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+## TODO: enable the following once deployed
+# CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
+CORS(app) # TODO: remove this once deployed
 
 @app.route("/timeline")
 def timeline():
@@ -58,3 +61,20 @@ def parents():
     """
     results = neo4j.execute_query(query)
     return jsonify(results)
+
+@app.route('/extract-text', methods=['POST'])
+def extract_text():
+    data = request.json
+    pdf_url = data.get('pdf_url')
+    
+    if not pdf_url:
+        return jsonify({'error': 'No PDF URL provided'}), 400
+
+    try:
+        text_content = extract_text_from_pdf(pdf_url)
+        return jsonify({'text': text_content})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)

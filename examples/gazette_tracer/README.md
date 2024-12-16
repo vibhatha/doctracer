@@ -1,5 +1,7 @@
 ## gazette_tracer
 
+Move this application to a separate repo
+
 This example demonstrates how to use the Gazette Tracer to trace the relationships between gazettes.
 
 ### Setup
