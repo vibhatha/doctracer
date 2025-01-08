@@ -52,7 +52,7 @@ Source = "https://github.com/vibhatha/doctracer"
 
 # Command-line scripts (if applicable)
 [project.scripts]
-doctracer = "doctracer.cli:main"
+doctracer = "doctracer.cli:cli"
 
 [tool.setuptools]
 # Additional setuptools-specific configuration
