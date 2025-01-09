@@ -54,3 +54,22 @@ docker exec -it doctracer_neo4j_server bash
 ```bash
 neo4j-admin set-initial-password test
 ```
+
+## Running Doctracer
+
+```bash
+$ doctracer --help
+Usage: doctracer [OPTIONS] COMMAND [ARGS]...
+
+  Doctracer command line interface.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  extract  Extract information from gazette PDFs.
+```
+
+```bash
+doctracer extract --type extragazette --input gzt.pdf --output output.json
+```
