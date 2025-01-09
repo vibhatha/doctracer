@@ -1,11 +1,12 @@
 from abc import ABC, abstractmethod
-from typing import List, Dict, Any
+from typing import Dict, Any
 from doctracer.prompt.executor import PromptExecutor
 from doctracer.extract.pdf_extractor import extract_text_from_pdfplumber
 
+
 class BaseGazetteProcessor(ABC):
-    def __init__(self, pdf_paths: List[str]):
-        self.pdf_paths = pdf_paths
+    def __init__(self, pdf_path: str):
+        self.pdf_path = pdf_path
         self.executor = self._initialize_executor()
 
     @abstractmethod
@@ -14,25 +15,22 @@ class BaseGazetteProcessor(ABC):
         pass
 
     @abstractmethod
-    def _extract_metadata(self, gazette_text: str) -> Dict[str, Any]:
+    def _extract_metadata(self, gazette_text: str) -> str:
         """Extract metadata from gazette text."""
         pass
 
     @abstractmethod
-    def _extract_changes(self, gazette_text: str) -> Dict[str, Any]:
+    def _extract_changes(self, gazette_text: str) -> str:
         """Extract changes from gazette text."""
         pass
 
-    def process_gazettes(self) -> List[Dict[str, Any]]:
+    def process_gazettes(self) -> str:
         """Process all gazette PDFs and return results."""
-        results = []
-        for pdf_path in self.pdf_paths:
-            gazette_text = extract_text_from_pdfplumber(pdf_path)
-            metadata = self._extract_metadata(gazette_text)
-            changes = self._extract_changes(gazette_text)
-            results.append({
-                "pdf_path": pdf_path,
-                "metadata": metadata,
-                "changes": changes
-            })
-        return results
+        
+        gazette_text = extract_text_from_pdfplumber(self.pdf_path)
+        metadata = self._extract_metadata(gazette_text)
+        changes = self._extract_changes(gazette_text)
+        
+        # Combine metadata and changes into a single JSON object
+        combined_data = f'{{"metadata": {metadata}, "changes": {changes}}}'
+        return combined_data

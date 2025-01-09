@@ -2,6 +2,7 @@ import click
 from typing import List
 from pathlib import Path
 from doctracer.extract.gazette.extragazette import ExtraGazetteProcessor
+import json
 
 PROCESSOR_TYPES = {
     'extragazette': ExtraGazetteProcessor,
@@ -33,27 +34,25 @@ PROCESSOR_TYPES = {
 def extract(processor_type: str, input_path: str, output_path: str):
     """Extract information from gazette PDFs."""
     input_path = Path(input_path)
-    pdf_paths: List[str] = []
     
     # Handle both single file and directory inputs
     if input_path.is_file():
-        pdf_paths = [str(input_path)]
+        pdf_path = input_path
     elif input_path.is_dir():
-        pdf_paths = [str(p) for p in input_path.glob("*.pdf")]
+        raise click.BadParameter("Directory input is not supported for this processor")
     
-    if not pdf_paths:
+    if not pdf_path:
         raise click.BadParameter("No PDF files found in the input path")
 
     # Initialize the appropriate processor
     processor_class = PROCESSOR_TYPES[processor_type]
-    processor = processor_class(pdf_paths)
+
+    processor = processor_class(pdf_path)
     
     # Process the gazettes
-    results = processor.process_gazettes()
+    output: str = processor.process_gazettes()
+    # Save the output as a text file
+    with open(output_path, 'w') as text_file:
+        text_file.write(output)
     
-    # Save results
-    import json
-    with open(output_path, 'w') as f:
-        json.dump(results, f, indent=2)
-    
-    click.echo(f"✓ Processed {len(results)} gazette(s). Results saved to {output_path}") 
+    click.echo(f"✓ Processed. Results saved to {output_path}") 
