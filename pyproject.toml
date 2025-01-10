@@ -18,8 +18,8 @@ license = { file = "LICENSE" }
 keywords = ["neo4j", "document-tracing", "python"]
 
 # Author and maintainer information
-authors = [{ name = "Vibhatha Abeykoon", email = "vibhatha@example.com" }]
-maintainers = [{ name = "Vibhatha Abeykoon", email = "vibhatha@example.com" }]
+authors = [{ name = "Vibhatha Abeykoon", email = "vibhatha@gmail.com" }]
+maintainers = [{ name = "Vibhatha Abeykoon", email = "vibhatha@gmail.com" }]
 
 # Supported classifiers
 classifiers = [
