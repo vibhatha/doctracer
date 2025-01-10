@@ -4,6 +4,7 @@ import pdfplumber
 import requests
 from io import BytesIO
 
+
 def extract_text_from_pdf(pdf_url):
     # Download the PDF file
     response = requests.get(pdf_url)
