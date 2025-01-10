@@ -2,6 +2,15 @@
 
 ## Prerequisites
 
+
+
+```bash
+# For Mac
+brew install poppler
+# For Ubuntu
+sudo apt-get install poppler-utils
+```
+
 ```bash
 mamba create -n doctracer_env python=3.9
 ```
