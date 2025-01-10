@@ -55,6 +55,5 @@ Source = "https://github.com/vibhatha/doctracer"
 doctracer = "doctracer.cli:cli"
 
 [tool.setuptools]
-# Additional setuptools-specific configuration
-package-data = { "doctracer" = ["*.json", "*.yaml"] }
-packages = { find = { where = ["doctracer"] } }
+packages = { find = {} }
+include-package-data = true
