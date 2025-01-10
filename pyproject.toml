@@ -57,4 +57,4 @@ doctracer = "doctracer.cli:cli"
 [tool.setuptools]
 # Additional setuptools-specific configuration
 package-data = { "doctracer" = ["*.json", "*.yaml"] }
-packages = ["doctracer"]
+packages = { find = { where = ["doctracer"] } }
