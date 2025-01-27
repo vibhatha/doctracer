@@ -12,6 +12,12 @@ To install required libraries run:
 pip install -e .
 ```
 
+Also add your OpenAI API key:
+
+``bash
+export OPENAI_API_KEY=`openai_key`
+```
+
 ### Setup Neo4j
 
 #### Environment Variables

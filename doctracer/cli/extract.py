@@ -1,11 +1,11 @@
 import click
 from typing import List
 from pathlib import Path
-from doctracer.extract.gazette.extragazette import ExtraGazetteProcessor
+from doctracer.extract.gazette.extragazette import ExtraGazetteAmendmentProcessor
 import json
 
 PROCESSOR_TYPES = {
-    'extragazette': ExtraGazetteProcessor,
+    'extragazette_amendment': ExtraGazetteAmendmentProcessor,
     # Add more processor types here
 }
 

@@ -13,7 +13,7 @@ _METADATA_PROMPT_TEMPLATE: str = """
     {{"Gazette ID":"2303/17","Gazette Published Date":"2022-10-26","Gazette Published by":"Authority"}}
     """
 
-_CHANGES_PROMPT_TEMPLATE: str = """
+_CHANGES_AMENDMENT_PROMPT_TEMPLATE: str = """
     You are an assistant tasked with extracting changes from a government gazette document. Based on the provided text, identify and list the following operation types along with their details:
     - RENAME
     - MERGE
@@ -34,14 +34,14 @@ _CHANGES_PROMPT_TEMPLATE: str = """
 
 class PromptCatalog(Enum):
     METADATA_EXTRACTION = "metadata_extraction"
-    CHANGES_EXTRACTION = "changes_extraction"
+    CHANGES_AMENDMENT_EXTRACTION = "changes_amendment_extraction"
     # Add more prompts as needed
 
     @staticmethod
     def get_prompt(prompt_type, gazette_text):
         if prompt_type == PromptCatalog.METADATA_EXTRACTION:
             return _METADATA_PROMPT_TEMPLATE.format(gazette_text=gazette_text)
-        elif prompt_type == PromptCatalog.CHANGES_EXTRACTION:
-            return _CHANGES_PROMPT_TEMPLATE.format(gazette_text=gazette_text)
+        elif prompt_type == PromptCatalog.CHANGES_AMENDMENT_EXTRACTION:
+            return _CHANGES_AMENDMENT_PROMPT_TEMPLATE.format(gazette_text=gazette_text)
         
         # Add more prompt templates as needed

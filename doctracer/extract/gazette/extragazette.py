@@ -4,7 +4,7 @@ from doctracer.prompt.config import SimpleMessageConfig
 from doctracer.prompt.catalog import PromptCatalog
 from doctracer.extract.gazette.gazette import BaseGazetteProcessor
 
-class ExtraGazetteProcessor(BaseGazetteProcessor):
+class ExtraGazetteAmendmentProcessor(BaseGazetteProcessor):
     def _initialize_executor(self) -> PromptExecutor:
         return PromptExecutor(ServiceProvider.OPENAI, AIModelProvider.GPT_4O_MINI, SimpleMessageConfig())
 
@@ -13,5 +13,5 @@ class ExtraGazetteProcessor(BaseGazetteProcessor):
         return self.executor.execute_prompt(metadata_prompt)
 
     def _extract_changes(self, gazette_text: str) -> str:
-        changes_prompt = PromptCatalog.get_prompt(PromptCatalog.CHANGES_EXTRACTION, gazette_text)
+        changes_prompt = PromptCatalog.get_prompt(PromptCatalog.CHANGES_AMENDMENT_EXTRACTION, gazette_text)
         return self.executor.execute_prompt(changes_prompt)
