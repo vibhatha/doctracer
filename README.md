@@ -82,8 +82,16 @@ Commands:
   extract  Extract information from gazette PDFs.
 ```
 
+To test extragazette amendment extraction try:
+
 ```bash
-doctracer extract --type extragazette --input gzt.pdf --output output.json
+doctracer extract --type extragazette_amendment --input data/testdata/sample_gazette.pdf --output output.json
+```
+
+To test extragazette table extraction try:
+
+```bash
+doctracer extract --type extragazette_table --input data/gzt_images --output output.txt
 ```
 
 ```bash
