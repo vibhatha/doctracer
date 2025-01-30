@@ -14,7 +14,7 @@ pip install -e .
 
 Also add your OpenAI API key:
 
-``bash
+```bash
 export OPENAI_API_KEY=`openai_key`
 ```
 
