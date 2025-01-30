@@ -1,0 +1,319 @@
+{
+    "ministers": [
+        {
+            "name": "Minister of Defence",
+            "functions": [
+                "Formulation, implementation, monitoring and evaluation of policies, strategies, programmes, and projects, in relation to the subject of Defence, and those subjects that come under the purview of Departments, Statutory Institutions and Public Corporations listed in Column II based on the national policies implemented by the government",
+                "Provision of relevant public services under the purview of the Ministry in an efficient and people friendly manner",
+                "Reforming all systems and procedures using modern management techniques and technology, thus ensuring that the functions of the Ministry are fulfilled while eliminating corruption and waste",
+                "Ensuring national security",
+                "Maintenance of internal security",
+                "Upgrading the prevailing integrated intelligence mechanism, trustworthy and efficient manner to ensure national and internal security",
+                "Establishment and operationalization of the National Security Advisory Board",
+                "Maintenance of relations with visiting Armed Forces",
+                "Extension of cooperation to international humanitarian operations"
+            ],
+            "departments": [
+                "Office of the Chief of Defence Staff",
+                "Sri Lanka Army",
+                "Sri Lanka Navy",
+                "Sri Lanka Air Force",
+                "State Intelligence Service",
+                "Civil Security Department",
+                "National Cadet Corps",
+                "National Authority for the Implementation of Chemical Weapons Convention",
+                "Sir John Kotelawala Defence University",
+                "Defence Services Command and Staff College",
+                "Miloda Institute – as a Faculty of Kotelawala Defence University",
+                "Defence Services College",
+                "Defence Research and Development Centre",
+                "Institute of National Security Studies",
+                "National Defence College",
+                "Rakna Arakshana Lanka Ltd.",
+                "Coast Guard Department of Sri Lanka",
+                "National Defence Fund",
+                "Ranaviru Seva Authority",
+                "Api Wewnwen Api Fund",
+                "Department of Meteorology",
+                "National Disaster Management Council",
+                "Disaster Management Centre",
+                "National Disaster Relief Services Centre",
+                "National Building Research Organization",
+                "Telecommunication Regulatory Commission of Sri Lanka and Allied Institutions"
+            ],
+            "laws": [
+                "Chief of Defence Staff Act No. 35 of 2009",
+                "Army Act No. 17 of 1949",
+                "Navy Act No. 34 of 1950",
+                "Air Force Act No. 41 of 1949",
+                "Extradition Law No. 8 of 1977",
+                "Explosives Act No. 21 of 1956",
+                "Firearms Ordinance No. 33 of 1916",
+                "Firing Ranges and Military Training Act No. 24 of 1951",
+                "Mobilization and Supplementary Forces Act No. 40 of 1985",
+                "Offensive Weapons Act, No. 18 of 1966",
+                "Piracy Act No. 9 of 2001",
+                "Prevention of Terrorism Act No. 48 of 1979",
+                "Public Security Ordinance No. 25 of 1947",
+                "Chemical Weapons Convention Act No. 58 of 2007",
+                "Sir John Kotelawala Defence Academy Act No. 68 of 1981",
+                "Defence Services Command and Staff College Act No. 5 of 2008",
+                "Suppression of Terrorist Bombings Act No. 11 of 1999",
+                "Suppression of Unlawful Acts Against the Safety of Maritime Navigation Act No. 42 of 2000",
+                "Private Security Agencies Act No. 45 of 1998",
+                "Department of Coast Guard Act No. 41 of 2009",
+                "Ranaviru Seva Authority Act No. 54 of 1999",
+                "Api Wewnwen Api Fund Act No. 6 of 2008"
+            ]
+        }
+    ]
+}
+
+{
+    "ministers": [
+        {
+            "name": "Minister of Defence",
+            "functions": [
+                "Performing responsibilities related to explosives, firearms, offensive weapons and chemical weapons",
+                "Performing responsibilities related to maintenance of light houses (other than those belonging to the Ports Authority)",
+                "Provision of defence education and post-service education for defence service personnel",
+                "Provision of higher education for defence service personnel",
+                "Matters relating to private security services",
+                "Enhancing excellence in the defense sector by integrating knowledge of national security with science, technology, and innovation",
+                "Technical updating of the Sri Lanka Navy and the Sri Lanka Coastal Guard and the enactment of relevant laws to ensure security and stability of the Exclusive Economic Zone (EEZ) of Sri Lanka",
+                "Rescue operations and administration of Coast Guard Service",
+                "Matters relating to Extradition",
+                "Matters relating to veteran and disabled soldiers",
+                "Provision of weather and climate related services",
+                "Conducting Meteorological surveys and research",
+                "Landslide disaster management and related research and development"
+            ],
+            "departments": [
+                ""
+            ],
+            "laws": [
+                "National Hydrographic Act No. 7 of 2024",
+                "Sri Lanka Disaster Management Act No. 13 of 2005",
+                "Sri Lanka Telecommunications Act No. 25 of 1991",
+                "All other legislations pertaining to the subjects specified in Column I and II, and not specifically brought under the purview of any other Minister."
+            ]
+        }
+    ]
+}
+
+{
+    "ministers": [
+        {
+            "name": "Minister of Defence",
+            "functions": [
+                "Forecasting natural disasters and sensitizing relevant sectors regarding them",
+                "Coordination of awareness programmes on natural and man-made disasters",
+                "Conducting rescue operations during natural and man-made disasters",
+                "Promotion of disaster resilient construction and provision of technical guidance",
+                "Encouraging research and development in relation to appropriate technology for housing and construction sector",
+                "Regulating telecommunication affairs to promote sustainable development of telecommunication industry by ensuring public interest in the increasingly competitive market",
+                "All other subjects that come under the purview of Institutions listed in Column II",
+                "Supervision of all the Institutions listed in Column II"
+            ],
+            "departments": [],
+            "laws": []
+        }
+    ]
+}
+
+{
+    "ministers": [
+        {
+            "name": "**Minister of Finance, Economic Development, Policy Formulation, Planning and Tourism**",
+            "functions": [
+                "Formulation, implementation, monitoring and evaluation of policies, strategies, programmes and projects, in relation to the subjects of Finance, Economic Development, Policy Formulation, Planning and Tourism",
+                "Provision of public services under the purview of the Ministry in an efficient and people friendly manner",
+                "Reforming all systems and procedures using modern management techniques and technology",
+                "Formulation of national economic and financial policies and strategies",
+                "Preparation of National Development and Public Investment Programmes",
+                "Formulation of fiscal and macro fiscal management policies",
+                "Implementation of appropriate policy measures to ensure sustainable economic growth and stability"
+            ],
+            "departments": [
+                "Department of National Planning",
+                "Department of External Resources",
+                "General Treasury",
+                "Department of Fiscal Policy",
+                "Department of National Budget",
+                "Department of Management Services",
+                "Department of Public Finance",
+                "Department of Treasury Operations",
+                "Department of State Accounts",
+                "Department of Trade and Investment Policy",
+                "Department of Legal Affairs",
+                "Department of Management Audit",
+                "Department of Development Finance",
+                "Department of Public Enterprises",
+                "Office of Comptroller General",
+                "Department of Project Management and Monitoring",
+                "Department of Information Technology Management",
+                "Department of Inland Revenue",
+                "Sri Lanka Customs",
+                "Department of Excise",
+                "State Resources Management Corporation",
+                "National Lotteries Board",
+                "Development Lotteries Board",
+                "Department of Import and Export Control",
+                "Central Bank of Sri Lanka"
+            ],
+            "laws": [
+                "Appropriation Acts",
+                "Customs Ordinance, No. 17 of 1956",
+                "Foreign Loans Act No. 29 of 1957",
+                "Debits Tax Act No. 12 of 2007",
+                "Betting and Gaming Levy Act No. 40 of 1998",
+                "Economic Service Charge Act No. 13 of 2006",
+                "Public Service Mutual Provident Association Ordinance No. 5 of 1891",
+                "Excise Ordinance (Chapter 52)",
+                "Finance Leasing Act No. 56 of 2000",
+                "Financial Transactions Reporting Act No. 6 of 2006",
+                "Public Financial Management Act No. 44 of 2024",
+                "Regulation of Insurance Industry Act No. 43 of 2000",
+                "Lady Lochore Fund Act No. 38 of 1951",
+                "Local Treasury Bills Ordinance No. 8 of 1923",
+                "Nation Building Tax Act No. 9 of 2009",
+                "Prevention of Money Laundering Act No. 5 of 2006",
+                "Sri Lanka Accounting and Auditing Standards Act No. 15 of 1995",
+                "Import and Export (Control) Act No. 1 of 1969",
+                "Stamp Duty (Special Provisions) Act No. 12 of 2006",
+                "Stamp Duty (Special Provisions) Act No. 10 of 2008",
+                "Stamp Duty Act No. 43 of 1982"
+            ]
+        }
+    ]
+}
+
+{
+    "ministers": [
+        {
+            "name": "**Minister of Finance, Economic Development, Policy Formulation, Planning and Tourism**",
+            "functions": [
+                "Execution of appropriate measures to ensure debt sustainability",
+                "Maintaining transparency and accountability in public financial management",
+                "Facilitation, coordination and monitoring of the implementation of cross-sectoral national policy priorities",
+                "Function as the Focal Point for facilitation and coordination of international and regional trade integration",
+                "Preparation of the annual budget and management of financial resources",
+                "Ensuring the execution of the national budget and enforcing budgetary and financial controls",
+                "Ensuring efficiency, effectiveness and accountability in tax administration through policy and technological transformation",
+                "Coordination and facilitation of public-private partnerships for sustainable economic development",
+                "Prepare a time bound action plan to enhance active engagement of youth in the economic process"
+            ],
+            "departments": [
+                "All State Banks, Financial Institutions, Insurance Companies and their subsidiaries and related institutions",
+                "Insurance Regulatory Commission of Sri Lanka",
+                "Sri Lanka Insurance Corporation and its subsidiaries and affiliated companies",
+                "Credit Information Bureau",
+                "Department of the Registrar of Companies",
+                "Securities and Exchange Commission of Sri Lanka",
+                "Sri Lanka Accounting and Auditing Standard Monitoring Board",
+                "Public Utilities Commission of Sri Lanka",
+                "Sri Lanka Export Credit Insurance Corporation",
+                "Housing Development Finance Corporation",
+                "State Mortgage and Investment Bank",
+                "Regional Development Bank",
+                "Tax Appeals Commission",
+                "Department of Census and Statistics",
+                "Institute of Policy Studies",
+                "Sustainable Development Council",
+                "Welfare Benefits Board",
+                "Public Service Mutual Provident Fund",
+                "Strike, Riot, Civil Commotion and Terrorism Fund",
+                "National Insurance Trust Fund",
+                "Employees’ Trust Fund",
+                "Lady Lochore Fund"
+            ],
+            "laws": [
+                "Value Added Tax Act No. 14 of 2002",
+                "Welfare Benefits Act No. 24 of 2002",
+                "Finance Act, No. 38 of 1971",
+                "Environment Conservation Levy Act No. 26 of 2008",
+                "Tax Appeals Commission Act No. 23 of 2008",
+                "Public Utilities Commission of Sri Lanka Act No. 35 of 2002",
+                "Institute of Policy Studies of Sri Lanka Act No 53 of 1988",
+                "Sustainable Development Act No. 19 of 2017",
+                "Development Lotteries Board Act No. 20 of 1997",
+                "Sri Lanka Export Credit Insurance Act No. 15 of 1978",
+                "Inland Revenue Act No. 24 of 2017",
+                "Central Bank of Sri Lanka Act No. 16 of 2023",
+                "National Savings Bank Act No. 30 of 1971",
+                "People's Bank Act No. 29 of 1961",
+                "Bank of Ceylon Ordinance No. 53 of 1938",
+                "Banking Act No. 30 of 1988",
+                "Housing Development Finance Corporation Act No. 07 of 1997",
+                "Recovery of loans by Banks (Special Provisions) Act No. 4 of 1990",
+                "Securities and Exchange Commission of Sri Lanka Act No. 19 of 2021",
+                "Regional Development Banks Act No. 41 of 2008"
+            ]
+        }
+    ]
+}
+
+{
+    "ministers": [
+        {
+            "name": "Minister of Finance, Economic Development, Policy Formulation, Planning and Tourism",
+            "functions": [
+                "Coordination with international agencies and mobilization of foreign resources for economic development",
+                "Liaising with donor agencies and international financial institutions",
+                "Enforcement of Government Financial Regulations",
+                "Management of the Consolidated Fund",
+                "Overall supervision of revenue agencies",
+                "Provision of direction and guidance to State Banks and Financial Agencies",
+                "Public expenditure management",
+                "Maintenance of information on state property such as vehicles, buildings, lands owned by all government institutions and development of methods to utilize such resources efficiently and effectively",
+                "Supervision of departmental and other public funds",
+                "Maintenance of Treasury Minutes on reports of the Public Accounts Committee",
+                "Cadre management for an efficient and productive public service and providing advisory services on fixing of salaries and wages",
+                "Revenue collection and expenditure monitoring",
+                "Formulation of guidelines for the promotion of management audit in departments",
+                "Regulation of insurance industry"
+            ],
+            "departments": [
+                "Colombo Port City Economic Commission",
+                "Public Debt Management Office",
+                "Techno Park Development Company (Pvt) Limited",
+                "Sri Lanka Export Development Board",
+                "Board of Investment of Sri Lanka",
+                "Sri Lanka Media Training Institute",
+                "Protection of Children National Trust Fund",
+                "Institutions coming under the Revival (Removal) of Underperforming Enterprises or Underutilized Assets Act vested to the Secretary to the Treasury",
+                "Sri Lanka Thiruposha Co. Ltd.",
+                "Sri Lanka Tourism Promotion Bureau",
+                "Sri Lanka Tourism Development Authority",
+                "Sri Lanka Institute of Tourism and Hotel Management",
+                "Sri Lanka Convention Bureau",
+                "Department of National Botanic Gardens"
+            ],
+            "laws": [
+                "National Insurance Trust Fund Act No. 28 of 2006",
+                "Employees' Trust Fund (Special Provisions) Act No. 19 of 1993",
+                "Employees Trust Fund Act No. 46 of 1980",
+                "Excise (Special Provisions) Act No. 13 of 1989",
+                "Registered Stock and Securities Ordinance No. 07 of 1937",
+                "Payment and Settlement Systems Act No. 28 of 2005",
+                "Finance Business Act No. 42 of 2011",
+                "Foreign Exchange Act No. 12 of 2017",
+                "Census Ordinance (Chapter 143)",
+                "Insurance Corporation Act No. 02 of 1961",
+                "Credit Information Bureau of Sri Lanka Act No. 18 of 1990",
+                "Business Names Act No. 07 of 1987",
+                "Companies Act No. 07 of 2007",
+                "Trade Marks Act No. 30 of 1964",
+                "Cheetus Ordinance No. 61 of 1935",
+                "Public Contract Act No. 03 of 1987",
+                "Microfinance Act No. 6 of 2016",
+                "Finance Companies Act No. 78 of 1988",
+                "Exchange Control Act No. 24 of 1953",
+                "Sri Lanka State Mortgage and Investment Bank Act No. 13 of 1975",
+                "Casino Business (Regulation) Act No. 17 of 2010",
+                "Payment Devices Frauds Act No. 30 of 2006"
+            ]
+        }
+    ]
+}
+

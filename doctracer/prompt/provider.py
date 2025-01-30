@@ -7,6 +7,7 @@ class ServiceProvider(Enum):
     AZURE = "azure"
     HUGGINGFACE = "huggingface"
     LOCAL = "local"
+    OPENAI_VISION = "openai_vision"
 
 class AIModelProvider(Enum):
     GPT_3 = "gpt-3"
