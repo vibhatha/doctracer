@@ -6,6 +6,12 @@
 mamba create -n doctracer_env python=3.9
 ```
 
+To install required libraries run:
+
+```bash
+pip install -e .
+```
+
 ### Setup Neo4j
 
 #### Environment Variables
